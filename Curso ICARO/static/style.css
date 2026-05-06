@@ -1,14 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     background-color: rgb(31, 31, 170);
 }
 
-header, nav{
+header{
     text-align: center;
+    
+    /* height: 40px; */
     background-color: black;
 }
 
@@ -17,23 +14,41 @@ nav{
     justify-content: center;
     align-items: center;
     background-color: yellow;
-    height: 30px;
+    /* height: 30px; */
 }
+
+nav a:hover{
+    font-weight: bold;
+}
+
 
 a{
     text-decoration: none;
     color: black;
-    font-size: 23px;
+    font-size: 20px;
     padding: 10px;
 }
 
+ol > li > a{
+    color: wheat;
+    padding-left: 0;
+    padding-top: 3px;
+}
+
+ol{
+    color: yellow;
+    padding-left: 1.3rem;
+}
+
 h1{
+    margin: 0px !important;
     color: blanchedalmond;
 }
 
 .presentacion{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
     border: 2px solid black;
     border-radius: 10px;
     margin: 5px;
@@ -44,11 +59,10 @@ h1{
 .img-portada{
     padding: 5px;
     width: 100%;
-    /* height: 90%; */
 }
 
 .presentacion > .informacion{
-    margin: 5px 18px;
+    margin: 2px 2px;
 }
 
 .presentacion > .informacion p{
