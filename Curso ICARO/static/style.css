@@ -74,9 +74,35 @@ article{
     margin: 5px;
 }
 
-article p{
+article > p{
     color: white;
     padding: 5px;
     text-align: justify;
 }
 
+.footer {
+    background-color: rgba(255, 255, 0, 0.699);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content > p {
+    margin-bottom: 0 !important;
+    text-align: left;
+}
+
+.bi-linkedin{
+    color: #0e76a8;
+}
+
+.bi-facebook{
+    color: #3b5998;
+}
+
+.bi-instagram{
+    color: #E1306C
+}
