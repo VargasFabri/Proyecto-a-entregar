@@ -1,15 +1,15 @@
-body{
+body {
     background-color: rgb(31, 31, 170);
 }
 
-header{
+header {
     text-align: center;
-    
+
     /* height: 40px; */
     background-color: black;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,68 +17,103 @@ nav{
     /* height: 30px; */
 }
 
-nav a:hover{
+nav a:hover {
     font-weight: bold;
 }
 
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     padding: 10px;
 }
 
-ol > li > a{
+ol>li>a {
     color: wheat;
     padding-left: 0;
     padding-top: 3px;
 }
 
-ol{
+ol {
+    border: 1px p wheat;
+    background-color: #f3e5e50a;
     color: yellow;
     padding-left: 1.3rem;
 }
 
-h1{
+h1 {
     margin: 0px !important;
     color: blanchedalmond;
 }
 
-.presentacion{
+.presentacion {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 5px;
     margin-top: 10px;
     height: auto;
 }
 
-.img-portada{
+.img-portada {
     padding: 5px;
     width: 100%;
 }
 
-.presentacion > .informacion{
+.presentacion>.informacion {
     margin: 2px 2px;
 }
 
-.presentacion > .informacion p{
+.presentacion>.informacion p {
     text-align: justify;
     color: white;
 }
 
-article{
+article {
     margin: 5px;
 }
 
-article > p{
+article>p {
     color: white;
     padding: 5px;
     text-align: justify;
 }
+
+strong {
+    color: rgba(5, 5, 5, 0.842);
+}
+
+span {
+    color: white;
+}
+
+@media screen and (max-width : 992px) {
+
+    .presentacion {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .menu-lateral {
+        position: sticky;
+        top: 10%;
+        align-self: start;
+    }
+
+    .img-portada{
+        padding-left: 3px;
+    }
+    
+
+}
+
 
 .footer {
     background-color: rgba(255, 255, 0, 0.699);
@@ -90,19 +125,19 @@ article > p{
     box-sizing: border-box;
 }
 
-.footer-content > p {
+.footer-content>p {
     margin-bottom: 0 !important;
     text-align: left;
 }
 
-.bi-linkedin{
+.bi-linkedin {
     color: #0e76a8;
 }
 
-.bi-facebook{
+.bi-facebook {
     color: #3b5998;
 }
 
-.bi-instagram{
+.bi-instagram {
     color: #E1306C
 }
