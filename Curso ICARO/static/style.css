@@ -125,9 +125,10 @@ span {
     box-sizing: border-box;
 }
 
-.footer-content>p {
+p {
     margin-bottom: 0 !important;
-    text-align: left;
+    text-align: start;
+    color: whitesmoke;
 }
 
 .bi-linkedin {

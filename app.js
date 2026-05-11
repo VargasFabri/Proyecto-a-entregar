@@ -1,0 +1,1 @@
+const nombre = print('Ìngresa tu nombre')

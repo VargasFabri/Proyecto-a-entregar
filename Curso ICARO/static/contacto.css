@@ -1,34 +1,73 @@
-body{
+body {
     margin: 0;
-}
-.grid-conteiner{
-    display: grid;
-    grid-template-areas:
-     "header header"
-     "aside main"
-     "footer footer";
-     grid-template-columns: 150px 1fr;
-     grid-template-rows: 1fr;
+    background-color: rgb(31, 31, 170);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header{
-    grid-area: header;
-    background-color: aqua;
+.container {
+    flex: 1;
+}
+header {
+    text-align: center;
+    /* height: 40px; */
+    background-color: black;
 }
 
-aside{
-    grid-area: aside;
-    background-color: red;
-    height: 80vh;
+h1{
+    margin-bottom: 0 !important;
 }
 
-main{
-    grid-area: main;
-    background-color: blue;
-}
-
-footer{
-    grid-area: footer;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: yellow;
-    height: 5vh;
+    /* height: 30px; */
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+.footer {
+    background-color: rgba(255, 255, 0, 0.699);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content>p {
+    margin-bottom: 0 !important;
+    text-align: left;
+}
+
+.footer-content {
+    text-align: left;
+}
+
+.bi-linkedin{
+    color: #0e76a8;
+}
+
+.bi-facebook{
+    color: #3b5998;
+}
+
+.bi-instagram{
+    color: #E1306C
 }
