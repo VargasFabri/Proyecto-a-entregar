@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/static/comics.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Curso ICARO/static/comics.css">
 </head>
 
 <body>
@@ -21,14 +24,20 @@
             <div class="collapse navbar-collapse justify-content-center" id="mi-menu">
                 <ul class="navbar-nav fs-5">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="/index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="/Curso ICARO/index.html">Inicio</a>
                     </li>
                     <li>
                         <a class="nav-link" href="/Curso ICARO/template/personajes.html">Personajes</a>
                     </li>
-                    <li>
-                        <a class="nav-link disabled" href="/Curso ICARO/template/comics.html">Mas Comics</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/Curso ICARO/template/comics.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Curso ICARO/template/comics.html">Comics</a></li>
+                            <li><a class="dropdown-item" href="#">Crear Comics</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="nav-link" href="/Curso ICARO/template/contacto.html">Contacto</a>
@@ -37,6 +46,19 @@
             </div>
         </div>
     </nav>
+
+    <div class="container-fluid">
+        <h2>MÀS COMICS</h2>
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-3">
+                <img src="/Curso ICARO/assets/image/img-portadas/Absolute Superman.avif" alt="">
+                <h3>Absolute Superman</h3>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
