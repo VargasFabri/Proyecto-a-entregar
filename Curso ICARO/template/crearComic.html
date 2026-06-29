@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Comics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Curso ICARO/static/crearComic.css">
+</head>
+
+<body>
+    <header>
+        <h1>Absolute Batman</h1>
+    </header>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mi-menu">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Curso ICARO/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/Curso ICARO/template/personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/Curso ICARO/template/comics.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Curso ICARO/template/comics.html">Comics</a></li>
+                            <li><a class="dropdown-item" href="/Curso ICARO/template/crearComic.html">Crear Comics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/Curso ICARO/template/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <h3>Agregar Comic</h3>
+        <form id="formulario">
+            <label for="titulo">Titulo del Comic</label>
+            <input type="text" id="titulo" placeholder="Ingresar titulo">
+
+            <label for="descripcion">Descripcion</label>
+            <textarea name="descripcion" id="descripcion" placeholder="Descripcion" rows="2"></textarea>
+
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option>Accion</option>
+                <option>Fantasia</option>
+                <option>SuperHèroes</option>
+                <option></option>
+            </select>
+
+            <label for="portada">Portada</label>
+            <input type="file" id="portada" accept="image/*">
+
+            <button type="submit">
+                Crear Comic
+            </button>
+        </form>
+        <div class="row" id="comicsCreados">
+
+        </div>
+    </main>
+
+    <footer class="footer justify-content-around">
+        <div class="footer-content">
+            <p>
+                <strong>&copy; 2026 Comic Toon</strong>
+            </p>
+        </div>
+        <div class="social-icons fs-5">
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+    </footer>
+
+    <script src="/Curso ICARO/assets/js/crearComic.js"></script>
+</body>
+
+</html>
