@@ -33,12 +33,13 @@ function mostrarComics(){
 
     comics.forEach(comic => {
         contenedor.innerHTML += `
-         <div class="col-md-2">
-          <div class="imagen">
+         <div class="col-xl-2 m-1">
+          <div class="card">
             <img src="${comic.portada}" class="card-img-top">
-            <div class="informacion">
+            <div class="card-body">
              <h5>${comic.titulo}</h5>
-             <p>${comic.categoria}</p>
+             <strong class="card-text text-muted">${comic.categoria}</strong>
+             <p class="card-text text-muted">${comic.descripcion}</p>
             </div>
          </div>
         </div>`;

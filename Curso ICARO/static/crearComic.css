@@ -47,25 +47,40 @@ h1 {
     color: blanchedalmond;
 }
 
-/* .container{
-    margin: 0;
-    width: 100%;
-    display: flex;
-} */
-
-.contenedor-izquierdo{
-    width: 50%;
-    background-color: bisque;
+h3{
+    color: white;
+    font-size: 32px;
 }
 
+.bi-book::before{
+    padding: 5px;
+    color: yellow;
+}
+
+#formulario{
+    padding: 0px !important;
+}
 input, textarea, select{
     display: block;
-    width: 30%;
+    width: 100%;
+    background-color: #aeb2b977;
+}
+
+#comicsCreados .card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+#comicsCreados .card {
+    width: 120%;
+    height: 100%;
+    background-color: yellow;
 }
 
 
 .footer {
     background-color: rgba(255, 255, 0, 0.699);
+    margin-top: 25vh;
     padding: 5px 20px;
     display: flex;
     justify-content: space-between;
